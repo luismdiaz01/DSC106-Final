@@ -1,0 +1,261 @@
+body, html{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    text-align:center;
+    font-size:100%;
+}
+
+html{
+    overflow:overlay;
+    height:100%;
+    /*Can't inherit height, has to inherit min-height*/
+}
+
+body{
+    overflow:overlay;
+    height: inherit;
+}
+
+
+#grid{
+    overflow:overlay;
+    height:inherit;
+    width:100%;
+    display:grid;
+
+    /*NO COMMAS!!*/
+    grid-template-rows: 10vh minmax(0, 1fr);
+    grid-template-columns: 20vw minmax(0, 1fr);
+    grid-template-areas: 
+        "sideNavWithLinks rowHead"
+        "sideNavWithLinks row1";
+}
+
+#sideNavWithLinks{
+
+    text-align:center;
+    grid-area: sideNavWithLinks;
+
+    width: 100%;
+    height: 100%;
+
+    color:white;
+    background-color: #4c4ce6;
+}
+
+#row1{
+    overflow:overlay;
+    grid-area: row1;
+
+    /*display flex uses FLEXBOX, it messed with the grid!!!!*/
+
+    width: 100%;
+    height: 100%;
+
+    /*Keep it clear, cards will be better*/
+    background-color: #8080ff;
+    justify-content: space-between;
+}
+
+#dropDown{
+
+}
+
+#rowHead{
+    grid-area: rowHead;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    /*Keep it clear, cards will be better*/
+    background-color: #992600;
+
+}
+
+#container{
+    display: grid;
+    grid-template-areas: "card1 . cardPadding2"
+                        "card1 . cardPadding3";
+
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 65% 5% 25%;
+    margin-top:2%;
+    margin-bottom: 11%;
+
+    width: 100%;
+    height: 90%;
+}
+
+#igraph{
+    margin-left: 7%;
+    margin-top:5%
+}
+
+#blank{
+    grid-area:blank;
+    width:100%;
+    height:100%;
+}
+
+#card1{
+    margin: 3%;
+    border:5% solid #ff6633;
+    border-radius: 7% 20%;
+    /*Inward, makes text less weird*/
+    grid-area: card1;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6633;
+    border:5px;
+}
+
+#cardPadding2{
+    grid-area: cardPadding2;
+    width: 100%;
+    height: 100%;
+    margin: 4%;
+    background-color: #ffcc33;
+    z-index:1;
+}
+
+#cardPadding3{
+    grid-area: cardPadding3;
+    width: 100%;
+    height: 100%;
+    border: 5%;
+    margin:1%;
+
+    background-color: #ff794d;
+}
+
+#containerSmall{
+    display: grid;
+    grid-template-areas: ". . cardPadding2Small"
+                        "card1Small . cardPadding2Small"
+                        "card1Small . cardPadding2Small"
+                        "card1Small . ."
+                        "card1Small . cardPadding3Small"
+                        "card1Small . cardPadding3Small"
+                        ". . cardPadding3Small";
+
+    grid-template-rows: 20% 15% 10% 10% 10% 15% 20%;
+    grid-template-columns: 40% 20% 40%;
+    margin:1%;
+
+    width: 10%;
+    height: 10%;
+}
+
+#blankSmall{
+    grid-area:blankSmall;
+    width:100%;
+    height:100%;
+}
+
+#card1Small{
+    margin: 3%;
+    border:5% solid #ff6633;
+    border-radius: 7% 30%;
+    /*Inward, makes text less weird*/
+    grid-area: card1Small;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6633;
+}
+
+#cardPadding2Small{
+    grid-area: cardPadding2Small;
+    width: 100%;
+    height: 100%;
+    background-color: #ffcc33;
+    z-index:1;
+}
+
+#cardPadding3Small{
+    grid-area: cardPadding3Small;
+    width: 100%;
+    height: 100%;
+    border: 5%;
+
+    background-color: #ff794d;
+}
+
+
+/*From !!Hue Section!! in HTML color picker */
+/*shade of blue 30's*/
+/*#ffffff
+95% 		 #e6f0ff
+90% 		 #cce0ff
+85% 		 #b3d1ff
+80% 		 #99c2ff
+75% 		 #80b3ff
+70% 		 #66a3ff
+65% 		 #4d94ff
+60% 		 #3385ff
+55% 		 #1a75ff
+50% 	       #0066ff
+45% 		 #005ce6
+40% 		 #0052cc
+35% 		 #0047b3
+30% 		 #003d99
+25% 		 #003380
+20% 		 #002966
+15% 		 #001f4d
+10% 		 #001433
+5% 		 #000a1a
+0% 		 #000000
+
+*/
+/*red-orange 60's and 
+	        #ffffff
+95% 		 #ffece6
+90% 		 #ffd9cc
+85% 		 #ffc6b3
+80% 		 #ffb399
+75% 		 #ff9f80
+70% 		 #ff8c66
+65% 		 #ff794d
+60% 		 #ff6633
+55% 		 #ff531a
+50% 	    #ff4000
+45% 		 #e63900
+40% 		 #cc3300
+35% 		 #b32d00
+30% 		 #992600
+25% 		 #802000
+20% 		 #661a00
+15% 		 #4d1300
+10% 		 #330d00
+5% 		 #1a0600
+0% 		 #000000
+
+yellow-orange shades 10's
+
+        #ffffff
+95% 		 #fff9e6
+90% 		 #fff2cc
+85% 		 #ffecb3
+80% 		 #ffe699
+75% 		 #ffdf80
+70% 		 #ffd966
+65% 		 #ffd24d
+60% 		 #ffcc33
+55% 		 #ffc61a
+50% 	    #ffbf00
+45% 		 #e6ac00
+40% 		 #cc9900
+35% 		 #b38600
+30% 		 #997300
+25% 		 #806000
+20% 		 #664d00
+15% 		 #4d3900
+10% 		 #332600
+5% 		 #1a1300
+0% 		 #000000
+*/
