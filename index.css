@@ -2,6 +2,23 @@ body, html{
     width:100%;
     padding: 0;
     margin: 0;
+    background:none transparent;
+}
+
+a:link{
+    color:#992600;
+}
+
+a:visited{
+    color:#4c4ce6;
+}
+
+a:hover{
+    color:#ffcc33;
+}
+
+.balank{
+    height:10%;
 }
 
 h2{
@@ -37,14 +54,42 @@ body{
 
 #sideNavWithLinks{
 
-    text-align:center;
+    
+    display:grid;
     grid-area: sideNavWithLinks;
+    grid-template-rows: 13% 87%;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: "outer outer"
+                        ". inner";
 
     width: 100%;
     height: 100%;
 
     color:white;
     background-color: #4c4ce6;
+    text-align: center;
+}
+
+#outer{
+    grid-area: outer;
+    width: 100%;
+    height: 100%;
+
+    color:white;
+    background-color: #4c4ce6;
+
+}
+
+#inner{
+    padding-top:10%;
+    grid-area: inner;
+    width: 100%;
+    height: 100%;
+
+    color:white;
+    
+    background-color: #9494d1;
+
 }
 
 #row1{
@@ -78,6 +123,11 @@ body{
 
 }
 
+#title{
+    width:100%;
+    text-align:center;
+}
+
 #container{
     display: grid;
     grid-template-areas: "card1 . cardPadding2"
@@ -89,13 +139,33 @@ body{
     margin-bottom: 11%;
 
     width: 100%;
-    height: 90%;
+    height: 96%;
 }
 
 #igraph{
     margin-left: 7%;
-    margin-top:5%
+    margin-top: 5%
 }
+
+#igraph1{
+    margin-left: -13%;
+    margin-top: -5%
+}
+
+#igraph2{
+    margin-left: -7%;
+    margin-top: -7%
+}
+
+#igraph3{
+    margin-left:5%;
+    margin-top:20%;
+}
+
+h2{
+    color:white;
+}
+
 
 #blank{
     grid-area:blank;
@@ -122,6 +192,9 @@ body{
     margin: 4%;
     background-color: #ffcc33;
     z-index:1;
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
 }
 
 #cardPadding3{
@@ -132,6 +205,24 @@ body{
     margin:1%;
 
     background-color: #ff794d;
+    text-align: justify;
+}
+
+h4{
+    width:90%;
+    height:100%;
+    margin:5%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+p{
+    width:90%;
+    height:100%;
+    margin:5%;
+    margin-top: 25%;
+    text-align: center;
+    color:rgb(70, 68, 68);
 }
 
 #containerSmall{

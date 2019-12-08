@@ -8,18 +8,32 @@
     <body>
     <div id="grid">
         <div id="sideNavWithLinks">
-            <ul>
-                <h2>Navigation</h2>
+                <div id="outer">
+                <div><h2>Navigation</h2>
+                </div>
+                </div>
+                
+                <div id="inner">
+        <div><a href="#Graph2">1. Neighborhood Graphic</a></div>
+                <div class="balank"></div>
+                <div><a href="#Graph4">2. Size of Homeless in Neighborhood</a></div>
+                <div class="balank"></div>
+                <div><a href="#Graph5">3. Table of Counts</a></div>
+                <div class="balank"></div>
+                <div><a href="#Graph3">4. Yearly Homeless Bar</a></div>
+                <div class="balank"></div>
+                <div><a href="#Graph6">5. Homeless Trends Bar</a></div>
+                <div class="balank"></div>
+                <div><a href="#Graph7">6. Homeless Population Line</a></div>
                 <h5><a href="https://shorthand.com/organisations/crjCYzYBgV/teams/XB68NO2RoL/stories/LkyGKV1OXT">Presentation Link</a></h5>
-                <a href=""></a>
-            </ul>
+        </ol>
+                </div>
         </div>
         <div id="rowHead">
-                <h2>The Homeless in San Diego</h2>
+                <h2 id="title">The Homeless in San Diego</h2>
         </div>
 
         <div id="row1">
-
                 <div id="containerSmall">
                         <div id="card1Small">
         
@@ -37,117 +51,126 @@
 
 
                 <div id="container">
+                                <div id="Graph2"></div>
                                 <div id="card1">
-                                        <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="san_deigo_homeless" src="//ucsdonline.maps.arcgis.com/apps/Embed/index.html?webmap=b6302f97a71f46b99d7581ac93443b37&extent=-117.1773,32.7011,-117.1323,32.7232&home=true&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
+                                        <style>.embed-container {position: relative; padding-bottom: 70%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 10%; left: 7%; width: 85%; height: 92%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="san_deigo_homeless" src="//ucsdonline.maps.arcgis.com/apps/Embed/index.html?webmap=b6302f97a71f46b99d7581ac93443b37&extent=-117.1773,32.7011,-117.1323,32.7232&home=true&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
                                 </div> 
                                 <div id="blank">
                                 
                                 </div>
                                 <div id="cardPadding2">
-                
+                                        <h4><b>Density of Homeless Population By Block</b> </h4>
                                 </div>
-                                <div id="cardPadding3">
-                
+                                <div id="cardPadding3"> 
+                                        <h2>Description:</h2>
+                                        <p>In this map, the blocks in downtown San Diego are plotted with the 
+                                        density of the homeless people living in that area. By putting this on a map we can see 
+                                        which regions are very affected and how the problem affects san diego in different ways.
+                                        </p>
                                 </div>
                         </div>
 
 
+                        <div id="container">
+                                        <div id="Graph4"></div>
+                                    <div id="card1">
+                                            <iframe id="igraph1" allowtransparency="true" frameborder="0"scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/17.embed" position="relative" top="-10%" left="-10%" height="110%" width="110%"></iframe>
+                                    </div>
+                                    <div id="blank">
+                                    
+                                    </div>
+                                    <div id="cardPadding2">
+                                        <h4><b>The Homeless Population By Neighborhood</b></h4>
+                                    </div>
+                                    <div id="cardPadding3">
+                                                <h2>Description:</h2>
+                                                <p>Plotting the homeless population by the neighborhood gave us a way to see which areas were greatly affected.
+                                        We can compare them over the course of a month and see which months were worse and if it was worse across all 
+                                        neighborhoods.</p>
+                                    </div>
+                            </div>
 
             <div id="container">
+                        <div id="Graph5"></div>
+                    <div id="card1">
+                            <iframe title="Total Homeless Types" aria-label="Table" id="graph3" src="//datawrapper.dwcdn.net/S2o6l/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="100%"  width="90%" allowtransparency="true"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                    </div>
+                    <div id="blank">
+                    
+                    </div>
+                    <div id="cardPadding2">
+                        <h4><b>Table of Different Areas Where Homeless Sleep</b></h4>
+                    </div>
+                    <div id="cardPadding3">
+                                <h2>Description:</h2>
+                                <p>Where people sleep when they are homeless is an important factor into trying to reduce the homeless population.
+                        People who have a shelter and structure to sleep ususally have more support and are able to get back on their feet.
+                        This table shows us the majority of homeless people still do not have shelters and sleep individually.</p>
+                    </div>
+            </div>
+
+
+            <div id="container">
+                        <div id="Graph3"></div>
                 <div id="card1">
-                        <iframe allowtransparency="true" frameborder="0" id="igraph" scrolling="no" style="border:none;background:#ff6633" seamless="seamless" src="https://plot.ly/~lmd003/15.embed" height="525" width="80%"></iframe>
+                        <iframe allowtransparency="true" frameborder="0" id="igraph" class="handler" scrolling="no" style="border:none;background:#ff6633" seamless="seamless" src="https://plot.ly/~lmd003/15.embed" height="90%" width="85%"></iframe>
                 </div>
                 <div id="blank">
                     
                 </div>
-                <div id="cardPadding2">
+                <div id="cardPadding2"><h4><b>The Homeless Population By Year</b></h4>
                     
                 </div>
                 <div id="cardPadding3">
-                    
+                                <h2>Description:</h2>
+                                <p>This chart shows how the population rose drastically in 2016 and the effects of
+                    the response from the city of San Diego. BY coloring each piece of the stack by month
+                    we can compare different months and see if any months were different than the rest. </p>
                 </div> 
             </div>
 
+
             <div id="container">
+                        <div id="Graph6"></div>
                     <div id="card1">
-                            <iframe id="igraph" allowtransparency="true" frameborder="0"scrolling="no" style="border:none;background: #ff6633" seamless="seamless" src="https://plot.ly/~lmd003/17.embed" height="75%" width="75%"></iframe>
+                        <iframe id="igraph2" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/19.embed" height="110%" width="107%" allowtransparency="true"></iframe>
                     </div>
                     <div id="blank">
                     
                     </div>
                     <div id="cardPadding2">
-    
+                        <h4><b>Homeless People By Month and Year</b></h4>
                     </div>
                     <div id="cardPadding3">
-    
+                                <h2>Description:</h2>
+                                <p>This chart has more information than the previous bar chart by showing a lot more specific trends in the population.
+                        We can see if population trends fluctaute over season and other useful info.</p>
                     </div>
             </div>
 
             <div id="container">
-                    <div id="card1">
-                            <iframe title="Total Homeless Types" aria-label="Table" id="datawrapper-chart-S2o6l" src="//datawrapper.dwcdn.net/S2o6l/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;background: #ff6633" height="75%"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                    </div>
-                    <div id="blank">
-                    
-                    </div>
-                    <div id="cardPadding2">
-    
-                    </div>
-                    <div id="cardPadding3">
-    
-                    </div>
-            </div>
-
-            <div id="container">
-                    <div id="card1">
-                        <iframe id="igraph" scrolling="no" style="border:none;background: #ff6633" seamless="seamless" src="https://plot.ly/~lmd003/19.embed" height="75%" width="75%"></iframe>
-                    </div>
-                    <div id="blank">
-                    
-                    </div>
-                    <div id="cardPadding2">
-    
-                    </div>
-                    <div id="cardPadding3">
-    
-                    </div>
-            </div>
-
-            <div id="container">
+                        <div id="Graph7"></div>
                 <div id="card1">
-                    <iframe id="igraph" scrolling="no" style="border:none;background: #ff6633" seamless="seamless" src="https://plot.ly/~lmd003/21.embed" height="75%" width="75%"></iframe>
+                    <iframe id="igraph2" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/21.embed" height="110%" width="107%"></iframe>
                 </div>
                 <div id="blank">
                 
                 </div>
                 <div id="cardPadding2">
-
+                      <h4><b>  Homeless population by month/year -line </b></h4>
                 </div>
                 <div id="cardPadding3">
-
+                                <h2>Description:</h2>
+                                <p>This line chart is just another way of seeing the population, similar to the bar chart.</p>
         </div>
 
         </div>
 
-        <div id="container">
-                <div id="card1">
-                    <iframe id="igraph" scrolling="no" style="border:none;background: #ff6633" seamless="seamless" src="https://plot.ly/~lmd003/21.embed" height="75%" width="75%"></iframe>
-                </div>
-                <div id="blank">
-                
-                </div>
-                <div id="cardPadding2">
-
-                </div>
-                <div id="cardPadding3">
-
-                </div>
-
-                </div>
 
 
-
-                Page Reference: <a href="https://data.sandiegodata.org/dataset/sandiegodata-org-dowtown-homeless/">sandiegodata.org</a>
+                Code References: <a href="https://data.sandiegodata.org/dataset/sandiegodata-org-dowtown-homeless/">sandiegodata.org</a>
+                <br/>
+                <br/>
 
     </div>
     <script src="main.js"></script>
